@@ -1,0 +1,513 @@
+/* GERAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+h1 {
+    font-family: 'Basic', sans-serif;
+    font-size: 50px;
+    color: #FFB74D;
+}
+
+h2 {
+    font-family: 'Basic', sans-serif;
+    font-size: 60px;
+    color: #FFB74D;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+a {
+    color: #FFB74D;
+    text-decoration: none;
+    font-family: 'Basic', sans-serif;
+}
+
+p {
+    font-family: 'Basic', sans-serif;
+    color: #FFB74D
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+#tela {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* EDIÇÃO DO MENU */
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    background-color: #333333;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 35px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    background-color: #333333;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 35px;
+}
+
+#buttonMenu {
+    display: none;
+}
+
+#buttonFooter {
+    display: none;
+}
+
+.itensMenu>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 0;
+}
+
+.itensMenu>ul>li>a {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.iconesMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.iconesMenu>p {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.iconesMenu>ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+/* INTROCUÇÃO */
+
+#introducao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 0px 40px 0px;
+}
+
+#introducao>img {
+    border: solid black 5px;
+    width: 300px;
+    flex-basis: 300px;
+    border-radius: 50%;
+}
+
+#introducao>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#introducao>div>p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 19px;
+    color: black;
+    padding: 0px 30%;
+    text-align: center;
+}
+
+#introducao>div>h1 {
+    padding: 10px;
+}
+
+/* PROJETOS */
+
+#projetos {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px 90px;
+    gap: 80px;
+}
+
+#projetos>h2 {
+    padding-left: 40px;
+}
+
+#projetos>div {
+    display: flex;
+    gap: 140px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projetos>div>img {
+    width: 512px;
+    height: 512px;
+    border-radius: 15px;
+}
+
+/* QUALIDADES */
+
+#qualidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+    padding: 60px 20px 60px 20px;
+}
+
+#qualidades>h2 {
+    text-align: center;
+}
+
+#qualidades>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+#qualidades>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+#qualidades>div>div *:nth-child(1) {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+#qualidades>div>div *:nth-child(3) {
+    color: black;
+    font-family: 'Source Serif Pro', serif;
+    text-align: center;
+    font-size: 19px;
+    padding: 30px;
+    margin-top: -30px;
+}
+
+#qualidades>div>div>img {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    border: solid black 5px;
+}
+
+/* AVALIAÇÕES */
+
+#avaliacoes {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px 60px 40px;
+}
+
+#avaliacoes>*:nth-child(1) {
+    flex: 1;
+    text-align: center;
+}
+
+#avaliacoes>div {
+    display: flex;
+    flex-wrap: wrap;
+    height: 95%;
+    width: 70%;
+}
+
+.avLiteral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: 50%;
+    width: 50%;
+}
+
+.avLiteral::after {
+    content: "";
+    width: 75%;
+    height: 3px;
+    border-radius: 15px;
+    background-color: black;
+    transform: translateY(15px);
+}
+
+.avLiteral>img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.avLiteral p:nth-child(2) {
+    color: black;
+    font-size: 19px;
+}
+
+.avLiteral p:nth-child(4) {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+.avLiteral>div>img {
+    width: 16px;
+    height: 16px;
+}
+
+/* CONVERT */
+
+#convert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 60px 40px 60px 40px;
+}
+
+#convert p {
+    color: black;
+    font-size: 16px;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+#convert h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* RESPONSIVIDADE */
+
+/* MENU */
+
+@media(max-width:880px) {
+    .iconesMenu>p {
+        display: none;
+    }
+}
+
+@media(max-width:660px) {
+
+    #menu {
+        padding-left: 10%;
+    }
+
+    #footer {
+        padding-left: 10%;
+    }
+
+    .itensMenu ul {
+        display: none;
+    }
+
+    #buttonMenu {
+        display: block;
+    }
+
+    #buttonFooter {
+        display: block;
+    }
+
+    #menu>div.active .itensMenu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #FFB74D;
+        border-radius: 10px;
+        padding: 8px;
+        position: absolute;
+        left: 20px;
+        top: 80px;
+    }
+
+    #footer>div.active .itensMenu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #FFB74D;
+        border-radius: 10px;
+        padding: 8px;
+        position: absolute;
+        margin-top: -175px;
+        left: 20px;
+    }
+
+    .itensMenu>ul>li>a {
+        color: #333333;
+        border-bottom: solid #333333 2.5px;
+    }
+}
+
+/* INTRODUÇÃO */
+
+@media(max-width:970px) {
+    #introducao>div>p {
+        padding: 0px 15%;
+    }
+}
+
+@media(max-width:525px) {
+    #introducao>div>h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+/* PROJETOS */
+
+@media(max-width:1360px) {
+    #projetos>div {
+        gap: 80px;
+    }
+}
+
+@media(max-width:1150px) {
+    #projetos>div>img {
+        width: 384px;
+        height: 384px;
+    }
+}
+
+@media(max-width:895px) {
+    #projetos>div {
+        gap: 30px;
+    }
+}
+
+@media(max-width:855px) {
+
+    #projetos {
+        padding: 100px 20px 90px;
+    }
+
+    #projetos>div {
+        gap: 100px;
+    }
+
+    #projetos>div>img {
+        width: 512px;
+        height: 512px;
+    }
+
+    #projetos>h2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-left: 0px;
+    }
+}
+
+@media(max-width:550px) {
+    #projetos>div>img {
+        width: 384px;
+        height: 384px;
+    }
+}
+
+@media(max-width:420px) {
+    #projetos>div>img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* QUALIDADES */
+
+@media(max-width:1020px) {
+
+    #qualidades>div {
+        flex-direction: column;
+        gap: 60px;
+        padding: 0px 100px;
+    }
+}
+
+@media(max-width:610px) {
+    #qualidades>div {
+        padding: 0px 20px;
+    }
+}
+
+@media(max-width:380px) {
+    #qualidades>div>div>img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* AVALIAÇÕES */
+
+@media(max-width:1035px) {
+    #avaliacoes>h2 {
+        font-size: 45px;
+    }
+}
+
+@media(max-width:850px) {
+    #avaliacoes {
+        flex-direction: column;
+    }
+
+    #avaliacoes>h2 {
+        font-size: 60px;
+    }
+
+    #avaliacoes>div {
+        width: 100%;
+    }
+}
+
+@media(max-width:630px) {
+    .avLiteral {
+        width: 100%;
+    }
+}
